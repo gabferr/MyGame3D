@@ -1,6 +1,4 @@
-
 using System.Collections.Generic;
-using TMPro;
 using GABFERR.Core.Singleton;
 using UnityEngine;
 
@@ -16,10 +14,17 @@ public class itemManager : Singleton<itemManager>
     private void Start()
     {
         Reset();
-       
+            LoadItemsFromSave();
     }
-  
-    public void Reset()
+
+    public void LoadItemsFromSave()
+    {
+           AddByType(ItemsType.COIN, SaveManager.Instance.Setup.coins);
+            AddByType(ItemsType.LIFEPACK, SaveManager.Instance.Setup.health);
+
+        }
+
+        public void Reset()
     {
            foreach (var i in itemSetups)
            {
@@ -28,19 +33,19 @@ public class itemManager : Singleton<itemManager>
     }
         
     public ItemSetup GetItemByType(ItemsType item )
-    {  
-      return itemSetups.Find(i => i.itemType == item);
-    }
-        public void AddByType(ItemsType item ,int amount = 1)
-    {   if (amount < 0) return;
-       itemSetups.Find(i => i.itemType == item).soInt.value += amount;
-    }
+        {  
+          return itemSetups.Find(i => i.itemType == item);
+        }
+    public void AddByType(ItemsType item ,int amount = 1)
+        {   if (amount < 0) return;
+           itemSetups.Find(i => i.itemType == item).soInt.value += amount;
+        }
     public void RemoveByType(ItemsType item, int amount = 1)
-    {
-            var iten = itemSetups.Find(i => i.itemType == item);
-            iten.soInt.value -= amount;
-            if (iten.soInt.value < 0) iten.soInt.value = 0;
-    }
+        {
+          var iten = itemSetups.Find(i => i.itemType == item);
+          iten.soInt.value -= amount;
+          if (iten.soInt.value < 0) iten.soInt.value = 0;
+        }
 
     [NaughtyAttributes.Button]
     private void AddCoin()

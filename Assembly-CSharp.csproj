@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Utils\ShakeCamera.cs" />
     <Compile Include="Assets\Scripts\Items\ItemLayout.cs" />
     <Compile Include="Assets\Scripts\CheckPoint\CheckPointBase.cs" />
+    <Compile Include="Assets\Scripts\Utils\PlayLevel.cs" />
     <Compile Include="Assets\Scripts\GABFERR_STUDIOS\FSMExample.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAbilityBase.cs" />
     <Compile Include="Assets\Scripts\GABFERR_STUDIOS\Core\Singleton\Singleton.cs" />
