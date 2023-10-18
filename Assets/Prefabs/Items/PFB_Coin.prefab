@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsType: 0
+  sfxType: 1
   compareTag: Player
   particleSystem: {fileID: 0}
   timeToHide: 3

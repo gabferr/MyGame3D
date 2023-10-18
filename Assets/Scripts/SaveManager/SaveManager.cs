@@ -72,15 +72,17 @@ public class SaveManager : Singleton<SaveManager>
             fileLoaded = File.ReadAllText(_path);
             _saveSetup = JsonUtility.FromJson<SaveSetup>(fileLoaded);
             lastlevel = _saveSetup.lastLevel;
-
+      
         }
         else
         {
             CreateNewSave();
             Save();
+
         }
 
-        FileLoaded.Invoke(_saveSetup);
+         FileLoaded?.Invoke(_saveSetup);
+        
  
     }
 

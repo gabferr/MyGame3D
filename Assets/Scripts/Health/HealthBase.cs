@@ -68,7 +68,7 @@ public class HealthBase : MonoBehaviour, IDamagable
         }
     }
 
-    public void ChangeDamageMuliply(float damage, float duration)
+    public void ChangeDamageMultiply(float damage, float duration)
     {
         StartCoroutine(ChangeDamageMultiplyCouroutine(damageMultiply, duration));
     }

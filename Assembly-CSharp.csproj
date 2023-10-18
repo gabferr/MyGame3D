@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Items\ItemLayout.cs" />
     <Compile Include="Assets\Scripts\CheckPoint\CheckPointBase.cs" />
     <Compile Include="Assets\Scripts\Utils\PlayLevel.cs" />
+    <Compile Include="Assets\Scripts\Audio\SoundManager.cs" />
     <Compile Include="Assets\Scripts\GABFERR_STUDIOS\FSMExample.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAbilityBase.cs" />
     <Compile Include="Assets\Scripts\GABFERR_STUDIOS\Core\Singleton\Singleton.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
     <Compile Include="Assets\Scripts\GABFERR_STUDIOS\StateMachine.cs" />
     <Compile Include="Assets\Scripts\Gun\ProjectileBase.cs" />
+    <Compile Include="Assets\Scripts\Audio\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\FlashColor.cs" />
     <Compile Include="Assets\Scripts\Items\itemCollactableCoin.cs" />
     <Compile Include="Assets\Scripts\Items\ItemLayoutManager.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Assets\Scripts\Chest\ChestItemBase.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyShoot.cs" />
     <Compile Include="Assets\Scripts\Cloth\ClothItemBase.cs" />
+    <Compile Include="Assets\Scripts\Audio\SFXPool.cs" />
     <Compile Include="Assets\Scripts\Chest\ChestBase.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationBase.cs" />
@@ -115,6 +118,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Audio\ShootingSound\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />

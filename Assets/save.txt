@@ -1,6 +1,6 @@
 {
     "lastLevel": 1,
     "playerName": "Gabriel",
-    "coins": 6,
+    "coins": 3,
     "health": 0
 }

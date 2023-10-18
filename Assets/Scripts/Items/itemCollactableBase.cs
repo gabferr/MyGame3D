@@ -8,8 +8,10 @@ namespace Itens
     {
         public ItemsType itemsType;
 
+        public SFXType sfxType;
+
         public string compareTag = "Player";
-        public new ParticleSystem particleSystem;
+        public ParticleSystem particleSystem;
         public int timeToHide = 3;
         public GameObject graphicItem;
 
@@ -29,6 +31,11 @@ namespace Itens
             }
 
         }
+
+        private void PlaySFX()
+        {
+            SFXPool.Instance.Play(sfxType);
+        }
         protected virtual void Collect()
         {
             if(collider != null) collider.enabled = false;
@@ -43,6 +50,7 @@ namespace Itens
         }
         protected virtual void OnCollect()
         {
+            PlaySFX();
             if (particleSystem != null) particleSystem.Play();
             if (audioSorce != null) audioSorce.Play();
             itemManager.Instance.AddByType(itemsType);
